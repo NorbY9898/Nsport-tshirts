@@ -10,7 +10,6 @@
     :root{
       --red:#e30613;
       --blue:#1677ff;
-      --dark:#030712;
       --text:#f7fbff;
       --muted:#a7b5cc;
       --line:rgba(255,255,255,.12);
@@ -69,7 +68,6 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:900;cursor:pointer;border:0;transition:.2s ease;font-size:15px}
     .btn:hover{transform:translateY(-2px)}
     .gold{background:linear-gradient(135deg,var(--red),var(--blue));color:#fff;box-shadow:0 18px 38px rgba(227,6,19,.22),0 0 34px rgba(22,119,255,.14)}
-    .ghost{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;backdrop-filter:blur(10px)}
 
     .section{padding:52px 0 18px}
     .section-head{margin-bottom:18px}
@@ -78,7 +76,7 @@
     .section-text{color:#a7b5cc;line-height:1.8;max-width:780px;margin-top:14px;font-size:17px}
 
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-    .showcase-card,.catalog-card,.cart-box,.contact-panel,.contact-form{background:linear-gradient(180deg,rgba(18,31,54,.96),rgba(9,16,29,.96));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}
+    .showcase-card,.catalog-card,.cart-box{background:linear-gradient(180deg,rgba(18,31,54,.96),rgba(9,16,29,.96));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}
     .showcase-card{padding:16px}
     .image-frame{position:relative;height:330px;border-radius:22px;overflow:hidden;background:radial-gradient(circle at center, rgba(22,119,255,.16), transparent 42%), linear-gradient(180deg,#152238,#07101f);border:1px solid rgba(255,255,255,.10)}
     .slider-image{width:100%;height:100%;object-fit:cover;display:block;opacity:1;transition:opacity .45s ease;user-select:none}
@@ -108,15 +106,15 @@
 
     .cart-box{margin-top:34px;padding:24px}.preview-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.preview-label{font-size:12px;letter-spacing:.22em;color:#8794aa;text-transform:uppercase;margin-bottom:4px;font-weight:900}.preview-title{color:#fff;font-size:24px}
     .cart-items{display:grid;gap:12px;margin-top:16px}.cart-item{border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:14px;background:rgba(255,255,255,.05);display:grid;gap:8px;color:#dce7ff}.cart-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.cart-code{color:#9dccff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:900}.remove-btn{border:1px solid rgba(227,6,19,.26);background:rgba(227,6,19,.08);color:#ff8b8b;border-radius:999px;padding:8px 12px;cursor:pointer;font-weight:900}.cart-empty{color:#a7b5cc;margin-top:16px}
-    .coupon-wrap{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:18px;padding:14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10)}.coupon-info{color:#a7b5cc;font-size:13px;margin-top:8px}.order-summary-card{margin-top:18px;padding:18px;border-radius:20px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05)}.summary-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;color:#dce7ff;border-bottom:1px dashed rgba(255,255,255,.10)}.summary-row:last-child{border-bottom:none}.summary-label{color:#a7b5cc}.discount-line{color:var(--ok)}
+    .coupon-wrap{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:18px;padding:14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10)}.coupon-info{display:none;color:#a7b5cc;font-size:13px;margin-top:8px}.order-summary-card{margin-top:18px;padding:18px;border-radius:20px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05)}.summary-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;color:#dce7ff;border-bottom:1px dashed rgba(255,255,255,.10)}.summary-row:last-child{border-bottom:none}.summary-label{color:#a7b5cc}.discount-line{color:var(--ok)}
 
-    .contact-wrap{padding:56px 0 70px;display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-panel,.contact-form{padding:28px}.contact-panel p{color:#a7b5cc;line-height:1.8;max-width:520px}.form-message,.catalog-message{margin-top:12px;padding:12px 14px;border-radius:14px;font-size:14px;line-height:1.5;display:none;border:1px solid transparent}.form-message.show,.catalog-message.show{display:block}.form-message.success,.catalog-message.success{color:var(--success);background:rgba(120,226,120,.08);border-color:rgba(120,226,120,.18)}.form-message.error,.catalog-message.error{color:var(--error);background:rgba(255,120,120,.08);border-color:rgba(255,120,120,.18)}.form-message.info,.catalog-message.info{color:#9dccff;background:rgba(22,119,255,.08);border-color:rgba(22,119,255,.18)}
+    .order-form-grid{padding:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:22px}.form-message,.catalog-message{margin-top:12px;padding:12px 14px;border-radius:14px;font-size:14px;line-height:1.5;display:none;border:1px solid transparent}.form-message.show,.catalog-message.show{display:block}.form-message.success,.catalog-message.success{color:var(--success);background:rgba(120,226,120,.08);border-color:rgba(120,226,120,.18)}.form-message.error,.catalog-message.error{color:var(--error);background:rgba(255,120,120,.08);border-color:rgba(255,120,120,.18)}.form-message.info,.catalog-message.info{color:#9dccff;background:rgba(22,119,255,.08);border-color:rgba(22,119,255,.18)}
     .footer{border-top:1px solid rgba(255,255,255,.10);padding:24px 0 36px;color:#8794aa;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 
     .modal{position:fixed;inset:0;background:rgba(0,0,0,.74);display:none;align-items:center;justify-content:center;padding:20px;z-index:9999}.modal.show{display:flex}.modal-box{width:min(920px,100%);max-height:90vh;overflow:auto;background:linear-gradient(180deg,#111f36,#07101f);border:1px solid var(--line2);border-radius:26px;box-shadow:var(--shadow);padding:24px}.modal-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.modal-title{color:#fff;font-size:28px}.modal-close{width:42px;height:42px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.06);color:#fff;font-size:20px;cursor:pointer}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.modal-preview{border:1px solid rgba(255,255,255,.10);border-radius:20px;overflow:hidden;background:#0b1424;min-height:460px}.modal-preview img{width:100%;height:100%;display:block;object-fit:cover}.modal-info{display:grid;gap:12px;align-content:start}.modal-code{color:#9dccff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:900}.meta-chip-row{display:flex;gap:10px;flex-wrap:wrap}.sub-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:14px}.sub-title{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:#9dccff;font-weight:900;margin-bottom:10px}.color-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.color-chip{border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);border-radius:14px;padding:12px;display:flex;gap:10px;align-items:center;cursor:pointer;color:#fff;font-weight:900}.color-chip.active,.color-chip:hover{border-color:rgba(22,119,255,.42);background:rgba(22,119,255,.12)}.color-dot{width:18px;height:18px;border-radius:999px;border:1px solid rgba(255,255,255,.25)}.size-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.size-box{border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:10px;background:rgba(255,255,255,.05)}.size-box label{display:block;font-size:13px;color:#fff;margin-bottom:8px;font-weight:900}.size-box input{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.22);color:#fff;outline:none}.stock-progress{height:10px;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden}.stock-progress-bar{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--blue),var(--red))}.size-chart{border:1px solid rgba(255,255,255,.10);border-radius:16px;overflow:hidden}.size-chart table{width:100%;border-collapse:collapse;font-size:13px}.size-chart th,.size-chart td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;color:#dce7ff}.size-chart th{color:#fff;background:linear-gradient(135deg,var(--blue),var(--red))}
 
     @media(max-width:1180px){.catalog-grid{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:980px){.hero,.grid,.contact-wrap,.modal-grid{grid-template-columns:1fr}.catalog-grid{grid-template-columns:repeat(2,1fr)}.catalog-toolbar{grid-template-columns:1fr}.top{align-items:flex-start}}
+    @media(max-width:980px){.hero,.grid,.modal-grid{grid-template-columns:1fr}.catalog-grid{grid-template-columns:repeat(2,1fr)}.catalog-toolbar,.order-form-grid{grid-template-columns:1fr}.top{align-items:flex-start}}
     @media(max-width:640px){.container{width:min(calc(100% - 22px), var(--max))}.hero{padding-top:48px}.hero h1{font-size:clamp(40px,13vw,58px)}.hero p,.section-text{font-size:16px}.grid,.catalog-grid{grid-template-columns:1fr}.image-frame{height:260px}.color-grid,.size-grid,.catalog-feature-grid{grid-template-columns:1fr}.coupon-wrap{grid-template-columns:1fr}.brand{font-size:22px}.brand-logo{width:46px;height:46px}.modal-preview{min-height:320px}}
   </style>
 </head>
@@ -133,7 +131,6 @@
       <nav class="nav">
         <a href="#bemutato" id="nav1">Prezentare</a>
         <a href="#keszmodellek" id="nav4">Modele disponibile</a>
-        <a href="#kapcsolat" id="nav3">Contact</a>
       </nav>
       <div class="lang-switch">
         <button class="lang-btn" id="huBtn" type="button">HU</button>
@@ -149,7 +146,6 @@
         <p id="subtitle">Alege modelul disponibil, culoarea, marimile si trimite comanda direct catre Nsport`s.</p>
         <div class="hero-actions">
           <a class="btn gold" href="#keszmodellek" id="btn1">Vezi modelele</a>
-          <a class="btn ghost" href="#kapcsolat" id="btn2">Cere oferta</a>
         </div>
       </div>
     </section>
@@ -191,7 +187,7 @@
           <input class="field" type="text" id="couponInput" placeholder="Introdu codul de reducere" style="margin:0;">
           <button class="btn gold" type="button" id="applyCouponBtn">Aplica cupon</button>
         </div>
-        <div class="coupon-info" id="couponInfo">Cupioane test active: NSPORT10, SPORT15, CLUB20</div>
+        <div class="coupon-info" id="couponInfo"></div>
 
         <div class="order-summary-card">
           <div class="summary-row"><span class="summary-label" id="summarySubtotalLabel">Subtotal produse</span><strong id="summarySubtotalValue">0 RON</strong></div>
@@ -200,7 +196,7 @@
         </div>
 
         <form id="catalogCheckoutForm" action="https://formsubmit.co/steliannagy@yahoo.com" method="POST">
-		  <input type="hidden" name="_cc" value="norbertnagy9898@yahoo.com">
+          <input type="hidden" name="_cc" value="norbertnagy9898@yahoo.com">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" id="catalogCheckoutNext" value="">
@@ -210,7 +206,8 @@
           <input type="hidden" name="catalog_total_price" id="catalogTotalPrice">
           <input type="hidden" name="catalog_discount_value" id="catalogDiscountValue">
           <input type="hidden" name="catalog_coupon_code" id="catalogCouponCode">
-          <div class="contact-wrap" style="padding:22px 0 0; grid-template-columns:1fr 1fr;">
+
+          <div class="order-form-grid">
             <div>
               <input class="field" type="text" name="name" id="catalogCustomerName" placeholder="Nume" required>
               <input class="field" type="email" name="email" id="catalogCustomerEmail" placeholder="E-mail" required>
@@ -222,28 +219,6 @@
           <div class="catalog-message" id="catalogCheckoutMessage"></div>
         </form>
       </div>
-    </section>
-
-    <section class="contact-wrap" id="kapcsolat">
-      <div class="contact-panel">
-        <div class="section-tag" id="contactTag">Contact</div>
-        <h2 class="section-title" id="contactTitle">Cere oferta Nsport`s</h2>
-        <p id="contactText">Scrie ce produs, tricou sau personalizare doresti. Cererea merge direct pe e-mail.</p>
-      </div>
-      <form class="contact-form" id="offerForm" action="https://formsubmit.co/steliannagy@yahoo.com" method="POST">
-	    <input type="hidden" name="_cc" value="norbertnagy9898@yahoo.com">
-        <div class="section-tag" id="formTag">Cerere oferta</div>
-        <input type="hidden" name="_subject" id="hiddenSubject" value="Cerere noua - Nsport`s">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" id="hiddenNext" value="">
-        <input class="field" type="text" id="nameField" name="name" placeholder="Nume" required>
-        <input class="field" type="email" id="emailField" name="email" placeholder="E-mail" required>
-        <input class="field" type="text" id="phoneField" name="phone" placeholder="Telefon">
-        <textarea class="field" id="messageField" name="message" placeholder="Scrie ce produs sau personalizare doresti."></textarea>
-        <button class="btn gold" type="submit" id="sendBtn" style="width:100%;">Trimite cererea</button>
-        <div id="formMessage" class="form-message"></div>
-      </form>
     </section>
   </main>
 
@@ -274,6 +249,9 @@
   <script>
     'use strict';
 
+    const ORDER_TO_EMAIL = 'steliannagy@yahoo.com';
+    const ORDER_CC_EMAIL = 'norbertnagy9898@yahoo.com';
+
     const readyModels = [
       {code:'NS-001', name:'Judo is Life - Albastru', price:89, image:'jobb2.jpg', colors:['Alb','Negru','Albastru'], stock:{Alb:18,Negru:9,Albastru:12}, chart:{XS:[48,66],S:[50,69],M:[53,72],L:[56,74],XL:[59,76],XXL:[62,78]}},
       {code:'NS-002', name:'Judo is Life - Rosu', price:89, image:'jobb3.jpg', colors:['Alb','Rosu','Albastru'], stock:{Alb:15,Rosu:8,Albastru:10}, chart:{XS:[48,66],S:[50,69],M:[53,72],L:[56,74],XL:[59,76],XXL:[62,78]}},
@@ -288,8 +266,8 @@
     const colorVisuals = {Negru:'#111111',Alb:'#f4f4f4',Albastru:'#1677ff',Gri:'#7d7d7d',Rosu:'#e30613'};
 
     const i18n = {
-      ro:{nav1:'Prezentare',nav4:'Modele disponibile',nav3:'Contact',titleMain:'Tricouri si produse sportive.',titleHighlight:'Comanda rapida.',subtitle:'Alege modelul disponibil, culoarea, marimile si trimite comanda direct catre Nsport`s.',btn1:'Vezi modelele',btn2:'Cere oferta',showcaseTag:'Prezentare',showcaseTitle:'Produse prezentate clar si sportiv',showcaseText:'Foloseste imagini reale cu tricourile si produsele disponibile. Sliderul poate fi schimbat usor cu pozele tale.',readyTag:'Modele disponibile',readyTitle:'Alege din tricourile existente',readyText:'Catalog cu cautare, culoare, stoc, marimi, cantitate si trimitere pe e-mail catre Nsport`s.',cartMini:'Cos',cartTitle:'Modele selectate',cartEmpty:'Inca nu exista modele selectate.',summarySubtotalLabel:'Subtotal produse',summaryDiscountLabel:'Reducere',cartTotalLabel:'Total estimat',contactTag:'Contact',contactTitle:'Cere oferta Nsport`s',contactText:'Scrie ce produs, tricou sau personalizare doresti. Cererea merge direct pe e-mail.',formTag:'Cerere oferta',sendBtn:'Trimite cererea',footer1:'© 2026 Nsport`s. Toate drepturile rezervate.',footer2:'Tricouri, accesorii sportive si produse personalizate.',searchPlaceholder:'Cautare dupa cod sau nume',couponPlaceholder:'Introdu codul de reducere',applyCouponBtn:'Aplica cupon',couponInfo:'Cupioane test active: NSPORT10, SPORT15, CLUB20',catalogCheckoutBtn:'Trimite comanda',nameField:'Nume',emailField:'E-mail',phoneField:'Telefon',messageField:'Scrie ce produs sau personalizare doresti.',catalogCustomerName:'Nume',catalogCustomerEmail:'E-mail',catalogCustomerPhone:'Telefon',catalogCustomerMessage:'Observatii / cereri speciale',detailsOrder:'Detalii / comanda',premiumTag:'Nsport',cardSub:'Model gata de comanda, cu selectie rapida de culoare si marimi.',colorsLabel:'Culori',sizesLabel:'Marimi',modelText:'modele',itemText:'pozitii',unitShort:'buc',stockHigh:'In stoc',stockMid:'Limitat',stockLow:'Ultimele bucati',remove:'Sterge',colorLabel:'Culoare',totalQty:'Cantitate totala',partialTotal:'Subtotal',qtyError:'Introdu cel putin 1 bucata.',addedToCart:'Modelul a fost adaugat in cos.',emptyCartError:'Cosul este gol.',fillNameEmail:'Completeaza numele si emailul.',readyOrderSending:'Comanda se trimite...',readyOrderSuccess:'Comanda a fost trimisa cu succes.',sendingMessage:'Cererea se trimite...',successMessage:'Cererea a fost trimisa cu succes.',couponInvalid:'Cod de reducere invalid.',couponApplied:'Cupon aplicat',orderTypeLabel:'Tip comanda',readyModelType:'Model Nsport',unitPrice:'Pret unitar',sizeDistribution:'Distributie marimi',couponLabel:'Cupon'},
-      hu:{nav1:'Bemutató',nav4:'Elérhető modellek',nav3:'Kapcsolat',titleMain:'Sportos termékek.',titleHighlight:'Gyors rendelés.',subtitle:'Válaszd ki az elérhető modellt, színt, méretet és küldd el a rendelést közvetlenül az Nsport`s-nak.',btn1:'Modellek megtekintése',btn2:'Ajánlatkérés',showcaseTag:'Bemutató',showcaseTitle:'Sportos, tiszta termékbemutató',showcaseText:'Használj valódi képeket az elérhető pólókról és termékekről. A slider képei könnyen cserélhetők.',readyTag:'Elérhető modellek',readyTitle:'Válassz a meglévő pólók közül',readyText:'Kereshető katalógus színnel, készlettel, mérettel, darabszámmal és e-mailes rendelésküldéssel.',cartMini:'Kosár',cartTitle:'Kiválasztott modellek',cartEmpty:'Még nincs kiválasztott modell.',summarySubtotalLabel:'Termékek összege',summaryDiscountLabel:'Kedvezmény',cartTotalLabel:'Becsült végösszeg',contactTag:'Kapcsolat',contactTitle:'Kérj Nsport`s ajánlatot',contactText:'Írd meg, milyen terméket, pólót vagy személyre szabást szeretnél.',formTag:'Ajánlatkérés',sendBtn:'Kérés elküldése',footer1:'© 2026 Nsport`s. Minden jog fenntartva.',footer2:'Pólók, sportkiegészítők és személyre szabott termékek.',searchPlaceholder:'Keresés kód vagy név alapján',couponPlaceholder:'Kuponkód megadása',applyCouponBtn:'Kupon alkalmazása',couponInfo:'Aktív tesztkuponok: NSPORT10, SPORT15, CLUB20',catalogCheckoutBtn:'Rendelés elküldése',nameField:'Név',emailField:'E-mail',phoneField:'Telefonszám',messageField:'Írd meg, milyen terméket vagy személyre szabást szeretnél.',catalogCustomerName:'Név',catalogCustomerEmail:'E-mail',catalogCustomerPhone:'Telefonszám',catalogCustomerMessage:'Megjegyzés / külön kérés',detailsOrder:'Részletek / rendelés',premiumTag:'Nsport',cardSub:'Azonnal rendelhető modell gyors szín- és méretválasztással.',colorsLabel:'Színek',sizesLabel:'Méretek',modelText:'modell',itemText:'tétel',unitShort:'db',stockHigh:'Készleten',stockMid:'Korlátozott',stockLow:'Utolsó darabok',remove:'Törlés',colorLabel:'Szín',totalQty:'Összes darab',partialTotal:'Részösszeg',qtyError:'Adj meg legalább 1 darabot.',addedToCart:'A modell bekerült a kosárba.',emptyCartError:'A kosár üres.',fillNameEmail:'Töltsd ki a nevet és az e-mail címet.',readyOrderSending:'Rendelés küldése folyamatban...',readyOrderSuccess:'A rendelés sikeresen elküldve.',sendingMessage:'Kérés küldése folyamatban...',successMessage:'A kérés sikeresen elküldve.',couponInvalid:'Érvénytelen kuponkód.',couponApplied:'Kupon alkalmazva',orderTypeLabel:'Rendelés típusa',readyModelType:'Nsport modell',unitPrice:'Egységár',sizeDistribution:'Méreteloszlás',couponLabel:'Kupon'}
+      ro:{nav1:'Prezentare',nav4:'Modele disponibile',titleMain:'Tricouri si produse sportive.',titleHighlight:'Comanda rapida.',subtitle:'Alege modelul disponibil, culoarea, marimile si trimite comanda direct catre Nsport`s.',btn1:'Vezi modelele',showcaseTag:'Prezentare',showcaseTitle:'Produse prezentate clar si sportiv',showcaseText:'Foloseste imagini reale cu tricourile si produsele disponibile. Sliderul poate fi schimbat usor cu pozele tale.',readyTag:'Modele disponibile',readyTitle:'Alege din tricourile existente',readyText:'Catalog cu cautare, culoare, stoc, marimi, cantitate si trimitere pe e-mail catre Nsport`s.',cartMini:'Cos',cartTitle:'Modele selectate',cartEmpty:'Inca nu exista modele selectate.',summarySubtotalLabel:'Subtotal produse',summaryDiscountLabel:'Reducere',cartTotalLabel:'Total estimat',footer1:'© 2026 Nsport`s. Toate drepturile rezervate.',footer2:'Tricouri, accesorii sportive si produse personalizate.',searchPlaceholder:'Cautare dupa cod sau nume',couponPlaceholder:'Introdu codul de reducere',applyCouponBtn:'Aplica cupon',catalogCheckoutBtn:'Trimite comanda',catalogCustomerName:'Nume',catalogCustomerEmail:'E-mail',catalogCustomerPhone:'Telefon',catalogCustomerMessage:'Observatii / cereri speciale',detailsOrder:'Detalii / comanda',premiumTag:'Nsport',cardSub:'Model gata de comanda, cu selectie rapida de culoare si marimi.',colorsLabel:'Culori',sizesLabel:'Marimi',modelText:'modele',itemText:'pozitii',unitShort:'buc',stockHigh:'In stoc',stockMid:'Limitat',stockLow:'Ultimele bucati',remove:'Sterge',colorLabel:'Culoare',totalQty:'Cantitate totala',partialTotal:'Subtotal',qtyError:'Introdu cel putin 1 bucata.',addedToCart:'Modelul a fost adaugat in cos.',emptyCartError:'Cosul este gol.',fillNameEmail:'Completeaza numele si emailul.',readyOrderSending:'Comanda se trimite...',readyOrderSuccess:'Comanda a fost trimisa cu succes.',couponInvalid:'Cod de reducere invalid.',couponApplied:'Cupon aplicat',orderTypeLabel:'Tip comanda',readyModelType:'Model Nsport',unitPrice:'Pret unitar',sizeDistribution:'Distributie marimi',couponLabel:'Cupon',addToCart:'Adauga in cos'},
+      hu:{nav1:'Bemutató',nav4:'Elérhető modellek',titleMain:'Sportos termékek.',titleHighlight:'Gyors rendelés.',subtitle:'Válaszd ki az elérhető modellt, színt, méretet és küldd el a rendelést közvetlenül az Nsport`s-nak.',btn1:'Modellek megtekintése',showcaseTag:'Bemutató',showcaseTitle:'Sportos, tiszta termékbemutató',showcaseText:'Használj valódi képeket az elérhető pólókról és termékekről. A slider képei könnyen cserélhetők.',readyTag:'Elérhető modellek',readyTitle:'Válassz a meglévő pólók közül',readyText:'Kereshető katalógus színnel, készlettel, mérettel, darabszámmal és e-mailes rendelésküldéssel.',cartMini:'Kosár',cartTitle:'Kiválasztott modellek',cartEmpty:'Még nincs kiválasztott modell.',summarySubtotalLabel:'Termékek összege',summaryDiscountLabel:'Kedvezmény',cartTotalLabel:'Becsült végösszeg',footer1:'© 2026 Nsport`s. Minden jog fenntartva.',footer2:'Pólók, sportkiegészítők és személyre szabott termékek.',searchPlaceholder:'Keresés kód vagy név alapján',couponPlaceholder:'Kuponkód megadása',applyCouponBtn:'Kupon alkalmazása',catalogCheckoutBtn:'Rendelés elküldése',catalogCustomerName:'Név',catalogCustomerEmail:'E-mail',catalogCustomerPhone:'Telefonszám',catalogCustomerMessage:'Megjegyzés / külön kérés',detailsOrder:'Részletek / rendelés',premiumTag:'Nsport',cardSub:'Azonnal rendelhető modell gyors szín- és méretválasztással.',colorsLabel:'Színek',sizesLabel:'Méretek',modelText:'modell',itemText:'tétel',unitShort:'db',stockHigh:'Készleten',stockMid:'Korlátozott',stockLow:'Utolsó darabok',remove:'Törlés',colorLabel:'Szín',totalQty:'Összes darab',partialTotal:'Részösszeg',qtyError:'Adj meg legalább 1 darabot.',addedToCart:'A modell bekerült a kosárba.',emptyCartError:'A kosár üres.',fillNameEmail:'Töltsd ki a nevet és az e-mail címet.',readyOrderSending:'Rendelés küldése folyamatban...',readyOrderSuccess:'A rendelés sikeresen elküldve.',couponInvalid:'Érvénytelen kuponkód.',couponApplied:'Kupon alkalmazva',orderTypeLabel:'Rendelés típusa',readyModelType:'Nsport modell',unitPrice:'Egységár',sizeDistribution:'Méreteloszlás',couponLabel:'Kupon',addToCart:'Kosárba'}
     };
 
     const sliders = {
@@ -310,28 +288,24 @@
     function clearMessage(el){ el.className = el.classList.contains('form-message') ? 'form-message' : 'catalog-message'; el.textContent = ''; }
     function getStockClass(stock){ if(stock <= 5) return 'stock-low'; if(stock <= 10) return 'stock-mid'; return 'stock-high'; }
     function getStockText(stock){ if(stock <= 5) return tr('stockLow'); if(stock <= 10) return tr('stockMid'); return tr('stockHigh'); }
-    function translateColor(color){
-      const huColors = {Negru:'Fekete',Alb:'Fehér',Albastru:'Kék',Gri:'Szürke',Rosu:'Piros'};
-      return state.lang === 'hu' ? (huColors[color] || color) : color;
+    function translateColor(color){ const huColors = {Negru:'Fekete',Alb:'Fehér',Albastru:'Kék',Gri:'Szürke',Rosu:'Piros'}; return state.lang === 'hu' ? (huColors[color] || color) : color; }
+
+    function syncEmailRecipients(){
+      const form = $('catalogCheckoutForm');
+      if(form) form.action = `https://formsubmit.co/${ORDER_TO_EMAIL}`;
+      document.querySelectorAll('input[name="_cc"]').forEach(input => { input.value = ORDER_CC_EMAIL; });
     }
 
     function setLang(lang){
       state.lang = lang === 'hu' ? 'hu' : 'ro';
       document.documentElement.lang = state.lang;
-      ['nav1','nav4','nav3','subtitle','btn1','btn2','showcaseTag','showcaseTitle','showcaseText','readyTag','readyTitle','readyText','cartMini','cartTitle','cartEmpty','summarySubtotalLabel','summaryDiscountLabel','cartTotalLabel','contactTag','contactTitle','contactText','formTag','sendBtn','footer1','footer2','couponInfo','catalogCheckoutBtn'].forEach(id => setText(id, tr(id)));
+      ['nav1','nav4','subtitle','btn1','showcaseTag','showcaseTitle','showcaseText','readyTag','readyTitle','readyText','cartMini','cartTitle','cartEmpty','summarySubtotalLabel','summaryDiscountLabel','cartTotalLabel','footer1','footer2','catalogCheckoutBtn'].forEach(id => setText(id, tr(id)));
       setText('titleMain', tr('titleMain'));
       setText('titleHighlight', tr('titleHighlight'));
       setPlaceholder('catalogSearch', tr('searchPlaceholder'));
       setPlaceholder('couponInput', tr('couponPlaceholder'));
       setText('applyCouponBtn', tr('applyCouponBtn'));
-      setPlaceholder('nameField', tr('nameField'));
-      setPlaceholder('emailField', tr('emailField'));
-      setPlaceholder('phoneField', tr('phoneField'));
-      setPlaceholder('messageField', tr('messageField'));
-      setPlaceholder('catalogCustomerName', tr('catalogCustomerName'));
-      setPlaceholder('catalogCustomerEmail', tr('catalogCustomerEmail'));
-      setPlaceholder('catalogCustomerPhone', tr('catalogCustomerPhone'));
-      setPlaceholder('catalogCustomerMessage', tr('catalogCustomerMessage'));
+      ['catalogCustomerName','catalogCustomerEmail','catalogCustomerPhone','catalogCustomerMessage'].forEach(id => setPlaceholder(id, tr(id)));
       $('catalogCheckoutSubject').value = state.lang === 'ro' ? 'Comanda noua - Nsport`s' : 'Új rendelés - Nsport`s';
       $('huBtn').classList.toggle('active', state.lang === 'hu');
       $('roBtn').classList.toggle('active', state.lang === 'ro');
@@ -395,7 +369,7 @@
       renderSizeChart(model);
       ['qtyXS','qtyS','qtyM','qtyL','qtyXL','qtyXXL'].forEach(id => { $(id).value = 0; });
       clearMessage($('catalogModalMessage'));
-      $('addToCartBtn').textContent = tr('addToCart') || (state.lang === 'hu' ? 'Kosárba' : 'Adauga in cos');
+      $('addToCartBtn').textContent = tr('addToCart');
       $('catalogModal').classList.add('show');
       document.body.style.overflow = 'hidden';
     }
@@ -419,7 +393,7 @@
       if(qty <= 0){ setMessage($('catalogModalMessage'), 'error', tr('qtyError')); return; }
       const color = state.catalogSelectedColor || model.colors[0];
       const available = model.stock[color] || 0;
-      if(qty > available){ setMessage($('catalogModalMessage'), 'error', `Stoc insuficient: ${available} ${tr('unitShort')}.`); return; }
+      if(qty > available){ setMessage($('catalogModalMessage'), 'error', state.lang === 'hu' ? `Nincs elég készlet. Elérhető: ${available} ${tr('unitShort')}.` : `Stoc insuficient: ${available} ${tr('unitShort')}.`); return; }
       const key = `${model.code}_${color}`;
       const payload = {key, code:model.code, name:model.name, price:model.price, image:model.image, color, sizes};
       const index = state.catalogCart.findIndex(item => item.key === key);
@@ -459,13 +433,14 @@
 
     function applyCoupon(){
       const code = ($('couponInput').value || '').trim().toUpperCase();
-      if(!code){ state.activeCoupon = null; $('couponInfo').textContent = tr('couponInfo'); renderCatalogCart(); return; }
+      if(!code){ state.activeCoupon = null; $('couponInfo').textContent = ''; renderCatalogCart(); return; }
       if(coupons[code]){ state.activeCoupon = code; $('couponInfo').textContent = `${tr('couponApplied')}: ${code}`; }
       else { state.activeCoupon = null; $('couponInfo').textContent = tr('couponInvalid'); }
       renderCatalogCart();
     }
 
     function checkoutCatalog(event){
+      syncEmailRecipients();
       clearMessage($('catalogCheckoutMessage'));
       if(!state.catalogCart.length){ event.preventDefault(); setMessage($('catalogCheckoutMessage'), 'error', tr('emptyCartError')); return; }
       const name = $('catalogCustomerName').value.trim();
@@ -489,12 +464,6 @@
       $('catalogOrderSummary').value = [summary,'',`${tr('summarySubtotalLabel')}: ${money(totals.subtotal)}`,`${tr('couponLabel')}: ${state.activeCoupon || '-'}`,`${tr('summaryDiscountLabel')}: ${money(totals.discount)}`,`${tr('cartTotalLabel')}: ${money(totals.total)}`].join('\n');
       $('catalogCheckoutNext').value = `${window.location.origin}${window.location.pathname}?catalogsent=1&lang=${state.lang}`;
       setMessage($('catalogCheckoutMessage'), 'info', tr('readyOrderSending'));
-    }
-
-    function offerSubmit(){
-      $('hiddenNext').value = `${window.location.origin}${window.location.pathname}?sent=1&lang=${state.lang}`;
-      $('sendBtn').disabled = true;
-      setMessage($('formMessage'), 'info', tr('sendingMessage'));
     }
 
     function renderDots(name){
@@ -532,7 +501,6 @@
       $('catalogModal').addEventListener('click', event => { if(event.target === $('catalogModal')) closeCatalog(); });
       $('addToCartBtn').addEventListener('click', addCurrentModelToCart);
       $('catalogCheckoutForm').addEventListener('submit', checkoutCatalog);
-      $('offerForm').addEventListener('submit', offerSubmit);
       document.querySelectorAll('[data-slider-next]').forEach(btn => btn.addEventListener('click', () => nextSlide(btn.dataset.sliderNext)));
       document.querySelectorAll('[data-slider-prev]').forEach(btn => btn.addEventListener('click', () => prevSlide(btn.dataset.sliderPrev)));
     }
@@ -542,13 +510,14 @@
       console.assert(typeof i18n.hu.nav1 === 'string' && typeof i18n.ro.nav1 === 'string', 'Expected HU/RO translations');
       console.assert(sliders.left.images.length > 1 && sliders.center.images.length > 1 && sliders.right.images.length > 1, 'Expected slider images');
       console.assert(document.querySelectorAll('.lang-btn').length === 2, 'Expected 2 language buttons');
+      console.assert($('catalogCheckoutForm').action.includes(ORDER_TO_EMAIL), 'Primary email OK');
+      console.assert(document.querySelector('#catalogCheckoutForm input[name="_cc"]').value === ORDER_CC_EMAIL, 'CC email OK');
     }
 
     function handleReturn(){
       const params = new URLSearchParams(window.location.search);
       const lang = params.get('lang') === 'hu' ? 'hu' : 'ro';
       setLang(lang);
-      if(params.get('sent') === '1') setMessage($('formMessage'), 'success', tr('successMessage'));
       if(params.get('catalogsent') === '1'){
         setMessage($('catalogCheckoutMessage'), 'success', tr('readyOrderSuccess'));
         state.catalogCart = [];
@@ -557,12 +526,13 @@
         renderCatalogCart();
         $('catalogCheckoutForm').reset();
       }
-      if(params.get('sent') === '1' || params.get('catalogsent') === '1'){
+      if(params.get('catalogsent') === '1'){
         window.history.replaceState({}, document.title, `${window.location.origin}${window.location.pathname}`);
       }
     }
 
     document.addEventListener('DOMContentLoaded', () => {
+      syncEmailRecipients();
       bindEvents();
       initSlider('left');
       initSlider('center');
